@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title data-i18n="pageTitle">زعيم الحلو - المنيو</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="splash splash-tl"></div>
+    <div class="splash splash-br"></div>
+    
+    <!-- LANGUAGE SWITCHER -->
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="ar">عربي</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <div class="hero-inner">
+      <div class="logo-block">
+        <div class="logo-svg-wrap">
+          <svg class="logo-svg" viewBox="0 0 420 140" xmlns="http://www.w3.org/2000/svg" aria-label="زعيم الحلو">
+            <!-- drop dots gold -->
+            <circle cx="96"  cy="18" r="5" fill="#f0c040"/>
+            <circle cx="108" cy="26" r="3.5" fill="#f0c040"/>
+            <circle cx="280" cy="22" r="5" fill="#f0c040"/>
+            <circle cx="292" cy="32" r="3.5" fill="#f0c040"/>
+            <!-- dashes gold -->
+            <rect x="60"  y="72" width="22" height="5" rx="2.5" fill="#f0c040"/>
+            <rect x="248" y="15" width="22" height="5" rx="2.5" fill="#f0c040" transform="rotate(-8 248 15)"/>
+            <rect x="320" y="72" width="22" height="5" rx="2.5" fill="#f0c040"/>
+            <!-- main text -->
+            <text
+              x="210" y="95"
+              text-anchor="middle"
+              font-family="'Cairo', sans-serif"
+              font-weight="900"
+              font-size="88"
+              fill="white"
+              letter-spacing="-2"
+              style="paint-order:stroke; stroke:rgba(255,255,255,0.15); stroke-width:3px"
+            >زعيم الحلو</text>
+            <!-- tagline -->
+            <text
+              x="210" y="128"
+              text-anchor="middle"
+              font-family="'Cairo', sans-serif"
+              font-weight="700"
+              font-size="22"
+              fill="#f0c040"
+            >ملوك السعادة</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-info">
+        <div class="phone-row">
+          <span class="phone-icons">🛵 💳</span>
+          <span class="phone-num" dir="ltr">0100 192 7171</span>
+        </div>
+        <div class="branches">
+          <p>📍 <strong data-i18n="branch1Label">الفرع الأول:</strong> <span data-i18n="branch1Addr">المساعيد - أول شارع الإذاعة</span></p>
+          <p>📍 <strong data-i18n="branch2Label">الفرع الثاني:</strong> <span data-i18n="branch2Addr">البلد - شارع فندق الصفا متفرع من شارع 23 يوليو</span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATEGORY NAV -->
+  <nav class="cat-nav">
+    <button class="cat-btn active" data-cat="all"        data-i18n="catAll">الكل</button>
+    <button class="cat-btn" data-cat="فزعة"             data-i18n="catFazaa">الفزعة</button>
+    <button class="cat-btn" data-cat="كبسة"             data-i18n="catKabsa">الكبسة</button>
+    <button class="cat-btn" data-cat="بان-كيك"          data-i18n="catPancake">بان كيك</button>
+    <button class="cat-btn" data-cat="رز-بلبن"          data-i18n="catRice">رز بلبن</button>
+    <button class="cat-btn" data-cat="قشطوطة"           data-i18n="catQashta">قشطوطة</button>
+    <button class="cat-btn" data-cat="بمبوظة"           data-i18n="catBamboza">البمبوظة</button>
+    <button class="cat-btn" data-cat="سلانكتية"         data-i18n="catSlank">السلانكتية</button>
+    <button class="cat-btn" data-cat="كشري-حلو"         data-i18n="catKoshary">كشري الحلو</button>
+    <button class="cat-btn" data-cat="كيكة-هبة"         data-i18n="catHeba">كيكة الهبة</button>
+    <button class="cat-btn" data-cat="لوؤة"             data-i18n="catLooa">اللوؤة</button>
+    <button class="cat-btn" data-cat="بستوتة"           data-i18n="catBastota">البستوتة</button>
+    <button class="cat-btn" data-cat="كيك-كرانشي"       data-i18n="catCrunchy">كيك كرانشي</button>
+    <button class="cat-btn" data-cat="قنبلة"            data-i18n="catBomb">القنبلة</button>
+    <button class="cat-btn" data-cat="فريسكا"           data-i18n="catFreska">فريسكا</button>
+    <button class="cat-btn" data-cat="إضافات"           data-i18n="catExtras">الإضافات</button>
+  </nav>
+
+  <!-- MENU -->
+  <main class="menu-wrap">
+
+    <!-- الفزعة / Fazaa -->
+    <section class="menu-sec" data-cat="فزعة">
+      <h2 class="sec-title" data-i18n="catFazaa">الفزعة</h2>
+      <div class="items-grid">
+        <div class="item">
+          <span data-i18n="fazaa_choco">الفزعة شكولا</span>
+          <span class="price">100.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- الكبسة / Kabsa -->
+    <section class="menu-sec" data-cat="كبسة">
+      <h2 class="sec-title" data-i18n="catKabsa">الكبسة</h2>
+      <div class="items-grid">
+        <div class="item">
+          <span data-i18n="kabsa">الكبسة</span>
+          <span class="price">130.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- بان كيك / Pancake -->
+    <section class="menu-sec" data-cat="بان-كيك">
+      <h2 class="sec-title">
+        <span data-i18n="catPancake">بان كيك</span>
+        <small>25 pieces</small>
+      </h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="pan_nutella">بان كيك نوتيلا</span><span class="price">60.00</span></div>
+        <div class="item"><span data-i18n="pan_kinder">بان كيك كيندر</span><span class="price">95.00</span></div>
+        <div class="item"><span data-i18n="pan_lotus">بان كيك لوتس</span><span class="price">110.00</span></div>
+        <div class="item"><span data-i18n="pan_pistachio">بان كيك بستاشيو</span><span class="price">110.00</span></div>
+        <div class="item"><span data-i18n="pan_mix">بان كيك ميكس</span><span class="price">110.00</span></div>
+        <div class="item"><span data-i18n="pan_zaeem">بان كيك زعيم الحلو</span><span class="price">130.00</span></div>
+      </div>
+    </section>
+
+    <!-- رز بلبن / Rice Pudding -->
+    <section class="menu-sec" data-cat="رز-بلبن">
+      <h2 class="sec-title" data-i18n="catRice">رز بلبن</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="rice_plain">رز ب لبن سادة</span><span class="price">30.00</span></div>
+        <div class="item"><span data-i18n="rice_nutella">رز ب لبن نوتيلا</span><span class="price">40.00</span></div>
+        <div class="item"><span data-i18n="rice_kinder">رز ب لبن كيندر</span><span class="price">45.00</span></div>
+        <div class="item"><span data-i18n="rice_lotus">رز ب لبن لوتس</span><span class="price">50.00</span></div>
+        <div class="item"><span data-i18n="rice_pistachio">رز ب لبن بستاشيو</span><span class="price">65.00</span></div>
+        <div class="item"><span data-i18n="rice_ice">رز ب لبن آيس</span><span class="price">35.00</span></div>
+        <div class="item"><span data-i18n="rice_almond">رز ب لبن لوز</span><span class="price">50.00</span></div>
+        <div class="item"><span data-i18n="rice_cream_nuts">رز ب لبن قشطة مكسرات</span><span class="price">65.00</span></div>
+        <div class="item"><span data-i18n="rice_mango">رز ب لبن مانجو</span><span class="price">65.00</span></div>
+        <div class="item"><span data-i18n="rice_serotonin">سيرتونين</span><span class="price">70.00</span></div>
+        <div class="item"><span data-i18n="rice_adrenaline">ادرنالين</span><span class="price">60.00</span></div>
+        <div class="item"><span data-i18n="rice_happiness">طبق السعادة</span><span class="price">75.00</span></div>
+        <div class="item"><span data-i18n="rice_crime">طبق الجريمة</span><span class="price">75.00</span></div>
+      </div>
+    </section>
+
+    <!-- قشطوطة / Qashtoota -->
+    <section class="menu-sec" data-cat="قشطوطة">
+      <h2 class="sec-title" data-i18n="catQashta">قشطوطة</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="qash_caramel">قشطوطة كراميل</span><span class="price">70.00</span></div>
+        <div class="item"><span data-i18n="qash_mango">قشطوطة مانجو</span><span class="price">100.00</span></div>
+        <div class="item"><span data-i18n="qash_caramel_almond">قشطوطة كراميل لوز</span><span class="price">100.00</span></div>
+        <div class="item"><span data-i18n="qash_caramel_nuts">قشطوطة كراميل مكسرات</span><span class="price">100.00</span></div>
+        <div class="item"><span data-i18n="qash_lotus">قشطوطة لوتس</span><span class="price">90.00</span></div>
+        <div class="item"><span data-i18n="qash_nutella">قشطوطة نوتيلا</span><span class="price">75.00</span></div>
+        <div class="item"><span data-i18n="qash_kinder">قشطوطة كيندر</span><span class="price">85.00</span></div>
+        <div class="item"><span data-i18n="qash_pistachio">قشطوطة بستاشيو</span><span class="price">110.00</span></div>
+        <div class="item"><span data-i18n="qash_fruits">قشطوطة فواكة</span><span class="price">80.00</span></div>
+        <div class="item"><span data-i18n="qash_superlux">قشطوطة سوبر لوكس</span><span class="price">100.00</span></div>
+        <div class="item"><span data-i18n="qash_coni">قشطوطة كوني</span><span class="price">100.00</span></div>
+      </div>
+      <p class="sec-note" data-i18n="qash_note">إضافة رز بلبن 25.80</p>
+    </section>
+
+    <!-- البمبوظة / Bamboza -->
+    <section class="menu-sec" data-cat="بمبوظة">
+      <h2 class="sec-title" data-i18n="catBamboza">البمبوظة</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="bam_caramel_nuts">بمبوظة كراميل مكسرات</span><span class="price">110.00</span></div>
+        <div class="item"><span data-i18n="bam_nutella">بمبوظة نوتيلا</span><span class="price">85.00</span></div>
+        <div class="item"><span data-i18n="bam_kinder">بمبوظة كيندر</span><span class="price">95.00</span></div>
+        <div class="item"><span data-i18n="bam_lotus_belg">بمبوظة لوتس بلجيكي</span><span class="price">95.00</span></div>
+        <div class="item"><span data-i18n="bam_pistachio_belg">بمبوظة بستاشيو بلجيكي</span><span class="price">105.00</span></div>
+        <div class="item"><span data-i18n="bam_mango">بمبوظة مانجو</span><span class="price">100.00</span></div>
+        <div class="item"><span data-i18n="bam_zaeem">بمبوظة زعيم الحلو</span><span class="price">120.00</span></div>
+      </div>
+      <p class="sec-note" data-i18n="bam_note">بسبوسة · تمرات · كرنب</p>
+    </section>
+
+    <!-- السلانكتية / Slankateya -->
+    <section class="menu-sec" data-cat="سلانكتية">
+      <h2 class="sec-title" data-i18n="catSlank">السلانكتية</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="slank_nutella">السلانكاتية نوتيلا</span><span class="price">60.00</span></div>
+        <div class="item"><span data-i18n="slank_kinder">السلانكاتية كيندر</span><span class="price">70.00</span></div>
+        <div class="item"><span data-i18n="slank_lotus">السلانكاتية لوتس</span><span class="price">75.00</span></div>
+        <div class="item"><span data-i18n="slank_pistachio">السلانكاتية بستاشيو</span><span class="price">90.00</span></div>
+        <div class="item"><span data-i18n="slank_zaeem">السلانكاتية زعيم الحلو</span><span class="price">100.00</span></div>
+      </div>
+      <p class="sec-note" data-i18n="slank_note">بسبوسة كندر مكسرات</p>
+    </section>
+
+    <!-- كشري الحلو / Sweet Koshary -->
+    <section class="menu-sec" data-cat="كشري-حلو">
+      <h2 class="sec-title" data-i18n="catKoshary">كشري الحلو</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="kosh_nutella">كشري الحلو نوتيلا</span><span class="price">80.00</span></div>
+        <div class="item"><span data-i18n="kosh_kinder">كشري الحلو كيندر</span><span class="price">90.00</span></div>
+        <div class="item"><span data-i18n="kosh_mango">كشري الحلو مانجو</span><span class="price">100.00</span></div>
+        <div class="item hot"><span data-i18n="kosh_lotus_hot">كشري الحلو لوتس بلجيكي</span><span class="price">110.00</span></div>
+        <div class="item hot"><span data-i18n="kosh_pistachio_hot">كشري الحلو بستاشيو بلجيكي</span><span class="price">115.00</span></div>
+        <div class="item"><span data-i18n="kosh_oreo_nutella">كشري الحلو أوريو نوتيلا</span><span class="price">90.00</span></div>
+        <div class="item"><span data-i18n="kosh_pistachio_lotus">كشري الحلو بستاشيو لوتس</span><span class="price">100.00</span></div>
+        <div class="item"><span data-i18n="kosh_zaeem">كشري زعيم الحلو</span><span class="price">120.00</span></div>
+      </div>
+      <p class="sec-note" data-i18n="kosh_note">بسبوسة,مانجو,مكسرات, كراميل </p>
+    </section>
+
+    <!-- كيكة الهبة / Heba Cake -->
+    <section class="menu-sec" data-cat="كيكة-هبة">
+      <h2 class="sec-title" data-i18n="catHeba">كيكة الهبة</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="heba_nutella">هبة نوتيلا</span><span class="price">150.00</span></div>
+        <div class="item"><span data-i18n="heba_kinder">هبة كيندر</span><span class="price">160.00</span></div>
+        <div class="item"><span data-i18n="heba_pistachio">هبة بستاشيو</span><span class="price">190.00</span></div>
+        <div class="item"><span data-i18n="heba_mini_nutella">هبة ميني نوتيلا</span><span class="price">95.00</span></div>
+        <div class="item"><span data-i18n="heba_mini_kinder">هبة ميني كيندر</span><span class="price">105.00</span></div>
+        <div class="item"><span data-i18n="heba_mini_pistachio">هبة ميني بستاشيو</span><span class="price">120.00</span></div>
+      </div>
+    </section>
+
+    <!-- اللوؤة / Looa -->
+    <section class="menu-sec" data-cat="لؤة">
+      <h2 class="sec-title" data-i18n="catLooa">اللؤة</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="looa_nutella">لؤة نوتيلا</span><span class="price">75.00</span></div>
+        <div class="item"><span data-i18n="looa_kinder">لؤة كيندر</span><span class="price">85.00</span></div>
+        <div class="item"><span data-i18n="looa_strawberry">لؤة فراولة</span><span class="price">90.00</span></div>
+        <div class="item"><span data-i18n="looa_pistachio">لؤة بستاشيو</span><span class="price">105.00</span></div>
+        <div class="item"><span data-i18n="looa_mango">لؤة مانجو</span><span class="price">105.00</span></div>
+        <div class="item"><span data-i18n="looa_lotus">لؤة لوتس</span><span class="price">95.00</span></div>
+      </div>
+    </section>
+
+    <!-- البستوتة / Bastota -->
+    <section class="menu-sec" data-cat="بستوتة">
+      <h2 class="sec-title" data-i18n="catBastota">البستوتة</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="bast_strawberry">بستوتة فراولة</span><span class="price">60.00</span></div>
+        <div class="item"><span data-i18n="bast_oreo">بستوتة أوريو</span><span class="price">50.00</span></div>
+        <div class="item"><span data-i18n="bast_caramel">بستوتة كراميل</span><span class="price">50.00</span></div>
+        <div class="item"><span data-i18n="bast_dubai">بستوتة ترند دبي</span><span class="price">70.00</span></div>
+      </div>
+    </section>
+
+    <!-- كيك كرانشي / Crunchy Cake -->
+    <section class="menu-sec" data-cat="كيك-كرانشي">
+      <h2 class="sec-title" data-i18n="catCrunchy">كيك كرانشي</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="crunch_nutella">كيك نوتيلا كرانشي</span><span class="price">130.00</span></div>
+        <div class="item"><span data-i18n="crunch_kinder">كيك كندر كرانشي</span><span class="price">160.00</span></div>
+      </div>
+    </section>
+
+    <!-- القنبلة / The Bomb -->
+    <section class="menu-sec" data-cat="قنبلة">
+      <h2 class="sec-title" data-i18n="catBomb">القنبلة</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="bomb_regular">قنبلة</span><span class="price">100.00</span></div>
+        <div class="item"><span data-i18n="bomb_zaeem">قنبلة زعيم الحلو</span><span class="price">140.00</span></div>
+      </div>
+    </section>
+
+    <!-- فريسكا / Freska -->
+    <section class="menu-sec" data-cat="فريسكا">
+      <h2 class="sec-title" data-i18n="catFreska">فريسكا</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="freska_momos">فريسكا هوهوز</span><span class="price">40.00</span></div>
+        <div class="item"><span data-i18n="freska_oreo">فريسكا أوريو</span><span class="price">40.00</span></div>
+        <div class="item"><span data-i18n="freska_twinkz">فريسكا توينكز</span><span class="price">40.00</span></div>
+        <div class="item"><span data-i18n="freska_dubai">فريسكا دبي</span><span class="price">50.00</span></div>
+        <div class="item"><span data-i18n="freska_lotus">فريسكا لوتس</span><span class="price">50.00</span></div>
+        <div class="item"><span data-i18n="freska_kinder">فريسكا كندر</span><span class="price">40.00</span></div>
+      </div>
+    </section>
+
+    <!-- الإضافات / Extras -->
+    <section class="menu-sec" data-cat="إضافات">
+      <h2 class="sec-title" data-i18n="catExtras">الإضافات</h2>
+      <div class="items-grid">
+        <div class="item"><span data-i18n="ext_basbosa">بسبوسة</span><span class="price">15.00</span></div>
+        <div class="item"><span data-i18n="ext_ice">آيس</span><span class="price">15.00</span></div>
+        <div class="item"><span data-i18n="ext_nutella">نوتيلا</span><span class="price">20.00</span></div>
+        <div class="item"><span data-i18n="ext_tunis">لوتس</span><span class="price">30.00</span></div>
+        <div class="item"><span data-i18n="ext_pistachio">بستاشيو</span><span class="price">30.00</span></div>
+        <div class="item"><span data-i18n="ext_losoz">لوز</span><span class="price">30.00</span></div>
+        <div class="item"><span data-i18n="ext_nuts">مكسرات</span><span class="price">50.00</span></div>
+        <div class="item"><span data-i18n="ext_oreo_powder">أوريو بودر</span><span class="price">20.00</span></div>
+        <div class="item"><span data-i18n="ext_lotus_powder">لوتس بودر</span><span class="price">20.00</span></div>
+        <div class="item"><span data-i18n="ext_cream">قشطة</span><span class="price">15.00</span></div>
+        <div class="item"><span data-i18n="ext_kinder">كيندر</span><span class="price">20.00</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <svg class="footer-logo-svg" viewBox="0 0 380 100" xmlns="http://www.w3.org/2000/svg" aria-label="زعيم الحلو">
+        <circle cx="88"  cy="14" r="4"   fill="#f0c040"/>
+        <circle cx="98"  cy="21" r="2.8" fill="#f0c040"/>
+        <circle cx="252" cy="16" r="4"   fill="#f0c040"/>
+        <circle cx="262" cy="24" r="2.8" fill="#f0c040"/>
+        <rect x="52"  y="54" width="16" height="4" rx="2" fill="#f0c040"/>
+        <rect x="224" y="11" width="16" height="4" rx="2" fill="#f0c040" transform="rotate(-8 224 11)"/>
+        <rect x="294" y="54" width="16" height="4" rx="2" fill="#f0c040"/>
+        <text x="190" y="68" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="900" font-size="64" fill="white" letter-spacing="-1">زعيم الحلو</text>
+        <text x="190" y="92" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="700" font-size="18"  fill="#f0c040">ملوك السعادة</text>
+      </svg>
+    </div>
+    <p class="footer-phone">📞 <span dir="ltr">0100 192 7171</span></p>
+    <p class="footer-copy" data-i18n="footerCopy">© 2026 زعيم الحلو · جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
